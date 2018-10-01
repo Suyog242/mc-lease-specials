@@ -1,0 +1,20 @@
+target_page: https://shop.ford.com/showroom/?linktype=incentives
+lease_base_url: https://www.servicesus.ford.com/incentives/SpecialOffers.json?
+finance_url: https://www.servicesus.ford.com/products/ModelSlices.json?appContext=BP2&make=Ford&model=###MODEL###&year=###YEAR###&planType=MSRP&staging=false&showPaymentEstimator=true&showPaymentEstimatorV2=true&modelSliceDefiners=NGB_Nameplate_Definers&modelSliceAttributes=NGB_Nameplate_Definers%3BST_Display_Trim_Names%3BST_ModelSlice_Alternate%3BBP3CC_SPC_ModelListParam_Label%3BBP3CC_SPC_TrimName_Label%3BBP3CC_SPC_Settings_FinanceTermFilter%3B&modelAttributes=NGB_Nameplate_DisplayName%3BBP3CC_SPC_ModelListParam_Label%3BBP3CC_SPC_Settings_FinanceTermFilter%3BST_FriendsFamily_Toggle%3BST_IO_Url_Nameplatepath%3B&geoKey=CA%7CF71A%7C59L803%7C71A803%7C59%7C71A%7CF71-CA%7CL59-CA
+    
+xpaths:
+  title1: //sample/xpath
+  title2: //sample/xpath
+  offer1: //sample/xpath
+  disclaimer: //sample/xpath
+headers:
+    [
+    "-H 'accept-encoding: gzip, deflate, br'", 
+    "-H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8'", 
+    "-H 'upgrade-insecure-requests: 1'", 
+    "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+    "-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'", 
+    "-H 'cache-control: max-age=0'", 
+    "-H 'authority: ###REF_URL###'", 
+    "--compressed"
+    ]

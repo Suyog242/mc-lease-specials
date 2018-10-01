@@ -1,0 +1,34 @@
+target_page: https://www.subaru.com/services/dealers/distances/by/zipcode?zipcode=##ZIPCODE##&count=6&type=Active
+xpaths:
+  title1: //
+  title2: //sample/xpath
+  title3: //sample/xpath
+  title4: //sample/xpath
+  offer1: //sample/xpath
+  offer2: //sample/xpath
+  offer3: //sample/xpath
+  offer4: //sample/xpath
+  disclaimer: //sample/xpath
+headers:
+    [
+    "-H 'Pragma: no-cache'", 
+    "-H 'Accept-Encoding: gzip, deflate, br'",
+    "-H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8'", 
+    "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+    "-H 'Accept: application/json, text/plain, */*'", 
+    "-H 'Referer: https://www.subaru.com/special-offers/index.html'", 
+    "-H 'Connection: keep-alive'", 
+    "-H 'Cache-Control: no-cache'", 
+    "--compressed"
+  ]
+other_offers:
+    [
+    "-H 'Connection: keep-alive'", 
+    "-H 'Cache-Control: max-age=0'", 
+    "-H 'Upgrade-Insecure-Requests: 1'", 
+    "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'", 
+    "-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'", 
+    "-H 'Accept-Encoding: gzip, deflate, br'", 
+    "-H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8'",  
+    "--compressed"
+      ]

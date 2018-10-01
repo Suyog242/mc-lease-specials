@@ -1,0 +1,28 @@
+target_page: http://www.lexus.com/offers/all-offers?zipCode=###zipcode###
+xpaths:
+    parameters : .//div [@data-offer-type = 'lease']
+    titles : .//h3[@class = 'offer-title']
+    title_1 : .//span[@class = 'offer-title__type']/text()
+    title_2 : .//span[@class = 'offer-title__model']/text()
+    offer_1 : .//div[@class = 'amount detail']/div[@class = 'value']/text()  ##per month
+    offer_1_months : .//div[@class = 'offer-term detail']/div[@class = 'value']/text()  ##for months
+    offer_2 : .//div[@class = 'down-payment detail']/div[@class = 'value']/text()
+    offer_2_months : .//div[@class = 'down-payment detail']/div[@class = 'qualifier']/text()
+    offer _3: .//p
+    Disclaimer1 : .//a [contains(@class,'offer-details-link')]//@data-disclaimers
+Headers:
+    ["-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'",
+    "-H 'Connection: keep-alive'",
+    "-H 'Accept-Encoding: gzip, deflate'",
+    "-H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8'",
+    "-H 'Upgrade-Insecure-Requests: 1'",
+    "--compressed"]
+Offer_Page_Headers:
+    ["-H 'Accept-Encoding: gzip, deflate'",
+    "-H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8'",
+    "-H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'",
+    "-H 'Accept: */*'",
+    "-H 'Referer: http://www.lexus.com/offers'",
+    "-H 'X-Requested-With: XMLHttpRequest'",
+    "-H 'Connection: keep-alive'",
+    "--compressed"]

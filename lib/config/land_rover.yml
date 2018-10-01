@@ -1,0 +1,57 @@
+#target_page: https://www.jaguarusa.com/retailer-locator/index.html?postCode=###ZIPCODE###&alternativeLocale=&filter=&radiusUnit=miles
+target_page: https://www.landroverusa.com/national-dealer-locator.html?postCode=###ZIPCODE###&filter=dealer
+
+xpaths:
+  dealer_info: //div[contains(@class,'infoCardDealer')]
+  address: .//tr[@class='address']
+  dealer_url: .//li[contains(@class,'websiteLink')]/a[1]/@href
+  model_url_selector: //a[contains(@title,'Land Rover')]/@href
+  model_desc: //table[@class='wysiwyg-table']//td//text()|//div[@class='dsbCont']//text()
+target_headers: [
+        "-H 'accept-encoding: gzip, deflate, br'", 
+        "-H 'accept-language: en-US,en;q=0.9'", 
+        "-H 'upgrade-insecure-requests: 1'", 
+        "-H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+        "-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'", 
+        "-H 'authority: www.jaguarusa.com' --compressed"
+        ]
+        
+dealer_home_page_headers: [
+        "-H 'Accept-Encoding: gzip, deflate, br'", 
+        "-H 'Accept-Language: en-US,en;q=0.9'", 
+        "-H 'Upgrade-Insecure-Requests: 1'", 
+        "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+        "-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'", 
+        "-H 'Cache-Control: max-age=0'", 
+        "-H 'Connection: keep-alive' --compressed"
+        ]
+        
+dealer_offer_headers: [
+        "-H 'Accept-Encoding: gzip, deflate, br'", 
+        "-H 'Accept-Language: en-US,en;q=0.9'", 
+        "-H 'Upgrade-Insecure-Requests: 1'", 
+        "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+        "-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'", 
+        "-H 'Cache-Control: max-age=0'", 
+        "-H 'Connection: keep-alive' --compressed"
+        ]
+
+model_offer_header: [
+        "-H 'Accept-Encoding: gzip, deflate, br'", 
+        "-H 'Accept-Language: en-US,en;q=0.9'", 
+        "-H 'Upgrade-Insecure-Requests: 1'", 
+        "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+        "-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'", 
+        "-H 'Referer: https://www.jaguarcerritos.com/special-offers.htm'", 
+        "-H 'Connection: keep-alive' --compressed"
+]
+
+current_offer_headers: [
+        "-H 'Origin: ###ORIGIN###'", 
+        "-H 'Accept-Encoding: gzip, deflate, br'", 
+        "-H 'Accept-Language: en-US,en;q=0.9'", 
+        "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+        "-H 'Accept: */*'", 
+        "-H 'Referer: ###REFERER###'", 
+        "-H 'Connection: keep-alive' --compressed"
+]

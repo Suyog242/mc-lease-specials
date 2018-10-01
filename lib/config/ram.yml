@@ -1,0 +1,15 @@
+target_page: http://www.ramtruckcurrentoffers.com/hostd/incentives/getadvertisedoffers.json?zip=###zipcode###&year=###year###&brand=T
+xpaths:
+  title1: //sample/xpath
+  title2: //sample/xpath
+  offer1: //sample/xpath
+  disclaimer: //sample/xpath
+headers:
+    [
+    "-H 'accept-encoding: gzip, deflate, br'", 
+    "-H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8'", 
+    "-H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+    "-H 'accept: */*'", 
+    "-H 'authority: ###REF_URL###'",
+    "--compressed"
+    ]

@@ -1,0 +1,45 @@
+target_page: http://www.buick.com/bypass/seg1_tools/tools/current-offers.html?x-zipcode=
+xpaths:
+  models: //div[@data-type='LEASE']
+  title1: //span[@class='IOM_regular']
+  title2: //p[@class='offerType']
+  title3: //span[@class='IOM_medium']
+  title4: //span[@class='IOM_regular']
+  offer1_part1: //span[@class='IOM_xlarge']
+  offer1_part2: //span[@class='IOM_large']
+  extra_offer_check: //p[@class='foot precio']//span[@class='IOM_regular']
+  offer2: //span[@class='IOM_regular']
+  offer3: //span[@class='IOM_regular']
+  offer2_3: //span[@class='IOM_regular_bold']
+  offer4: //sample/xpath
+  disclaimer_part1: //span[@class='IOM_small_bold']
+  disclaimer_part2: //span[@class='IOM_small']
+  LEASE: Lease
+finance_xpaths:
+  models: //div[@data-type='FINANCE']
+  title1: //span[@class='IOM_regular']
+  title2: //p[@class='offerType']
+  title3: //span[@class='IOM_small']
+  offer1_part1: //span[@class='IOM_xlarge']
+  offer1_part2: //span[@class='IOM_large']
+  offer2: //span[@class='IOM_small']
+  FINANCE: Finance
+other_offers_xpaths:
+  models: //div[@data-type='CASH']
+  title1: //span[@class='IOM_regular']
+  title2: //p[@class='offerType']
+  title3: //span[@class='IOM_small']
+  extra_offer_check: //p[@class='foot precio']//span[@class='IOM_regular']
+  offer1_part1: //span[@class='IOM_xlarge']
+  offer1_part2: //span[@class='IOM_large']
+  offer2: //span[@class='IOM_small']
+  OTHEROFFERS: Other  
+headers:
+    [
+    "-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'", 
+    "-H 'Connection: keep-alive'",
+    "-H 'Accept-Encoding: gzip, deflate'",
+    "-H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8'",
+    "-H 'Upgrade-Insecure-Requests: 1'",
+    "-H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36' --compressed"
+  ]

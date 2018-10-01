@@ -1,0 +1,11 @@
+target_page: http://sometargeturl.com/lease_specials.html
+xpaths:
+  title1: //sample/xpath
+  title2: //sample/xpath
+  title3: //sample/xpath
+  title4: //sample/xpath
+  offer1: //sample/xpath
+  offer2: //sample/xpath
+  offer3: //sample/xpath
+  offer4: //sample/xpath
+  disclaimer: //sample/xpath

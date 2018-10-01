@@ -1,0 +1,33 @@
+target_page: https://www.audiusa.com/dealers-webapp/map/get/zip/###ZIP###?zip=###ZIP###
+dealer_srp_url: http://###dealer_domain###/apis/incentives/gv/listing?widgetId=INCENTIVES_SEARCH_DEFAULT-incentives-search1&referrer=%2Fglobal-incentives-search%2Findex.htm
+xpaths:
+  trim_offers: //div[@class='offer-detail-wrap']//section[@data-offer='LEASE']//article
+  title1: //div[@class='offer-detail-wrap']//section[@data-offer='LEASE']//header//a[@id='LEASE']
+  title2: //header//h4
+  title3: //header//h3
+  offer1: //ul[contains(@class, 'clearfix')]//li[1]
+  offer2: //ul[contains(@class, 'clearfix')]//li[2]
+  offer3: //span[@class='valid-date']
+  offer4: //p[@class='offer-details']
+  disclaimer: //footer//dl[@class="disclaimers"]
+
+other_offers:
+  trim_offers: //div[@class='offer-detail-wrap']//section[@data-offer='PROMOTION']//article
+  title1: //div[@class='offer-detail-wrap']//section[@data-offer='PROMOTION']//header//a[@id='PROMOTION']
+  title2: //header//h4
+  title3: //header//h3
+  offer1: //ul[contains(@class, 'clearfix')]//li[1]
+  offer2: //div[@class='ddc-span12']/text()
+  offer3: //span[@class='valid-date']
+  offer4: //p[@class='offer-details']
+  disclaimer: //footer//dl[@class="disclaimers"]
+  
+headers: 
+    [
+    "-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'",
+    "-H 'Connection: keep-alive'",
+    "-H 'Accept-Encoding: gzip, deflate, br'",
+    "-H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8'",
+    "-H 'Upgrade-Insecure-Requests: 1'",
+    "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36' --compressed"
+    ]

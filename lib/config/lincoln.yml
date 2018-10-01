@@ -1,0 +1,18 @@
+target_page: https://shop.lincoln.com/showroom?linktype=incentives
+lease_base_url: https://www.servicesus.ford.com/incentives/SpecialOffers.json?
+xpaths:
+  title1: //sample/xpath
+  title2: //sample/xpath
+  offer1: //sample/xpath
+  disclaimer: //sample/xpath
+headers:
+    [
+    "-H 'accept-encoding: gzip, deflate, br'", 
+    "-H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8'", 
+    "-H 'upgrade-insecure-requests: 1'", 
+    "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+    "-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'", 
+    "-H 'cache-control: max-age=0'", 
+    "-H 'authority: ###REF_URL###'", 
+    "--compressed"
+    ]

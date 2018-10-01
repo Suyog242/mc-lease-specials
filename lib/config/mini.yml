@@ -1,0 +1,21 @@
+target_page: http://www.miniusa.com/content/miniusa/en/tools/shopping/offers.html#/start
+
+Headers: [
+"-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'",
+"-H 'Connection: keep-alive'",
+"-H 'Accept-Encoding: gzip, deflate, br'",
+"-H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8'",
+"-H 'Upgrade-Insecure-Requests: 1'",
+"--compressed"
+]
+
+offer_page_url: https://www.miniusa.com/api/site/offer/json/offers.action?zipcode=###zipcode###
+
+Offer_page_headers: [
+"-H 'Accept-Encoding: gzip, deflate, br'",
+"-H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8'",
+"-H 'Accept: application/json, text/plain, */*'",
+"-H 'Referer: https://www.miniusa.com/content/miniusa/en/tools/shopping/offers.html?tempZip=###zipcode###'",
+"-H 'Connection: keep-alive'",
+"--compressed"
+]

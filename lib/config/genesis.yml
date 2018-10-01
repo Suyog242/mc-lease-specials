@@ -1,0 +1,24 @@
+target_page: https://www.genesis.com/content/genesis/us/en/func/get_datainfo/_jcr_content.com_api.json
+xpaths:
+  title1: //sample/xpath
+  offer1: //sample/xpath
+  offer2: //sample/xpath
+  offer3: //sample/xpath
+  offer4: //sample/xpath
+  offer5: //sample/xpath
+  disclaimer: //sample/xpath
+headers:
+    [
+    "-H 'Origin: https://www.genesis.com'",
+ "-H 'Accept-Encoding: gzip, deflate, br'",
+ "-H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8'",
+ "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'",
+ "-H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8'",
+ "-H 'Accept: application/json, text/javascript, */*; q=0.01'",
+ "-H 'CSRF-Token: undefined'",
+ "-H 'X-Requested-With: XMLHttpRequest'",
+ "-H 'Connection: keep-alive'",
+ "-H 'Referer: https://www.genesis.com/us/en/promotions.html'"
+ ]
+ 
+post_data: service=SpecialOffersService&apiHost=prevapp&zipcode=###ZIP###

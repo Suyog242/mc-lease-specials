@@ -1,0 +1,18 @@
+target_page: https://www.smartusa.com/special-offers
+xpaths:
+  title1: //
+  title2: //sample/xpath
+  title3: //sample/xpath
+  title4: //sample/xpath
+  offer1: //sample/xpath
+  offer2: //sample/xpath
+  offer3: //sample/xpath
+  offer4: //sample/xpath
+  disclaimer: //sample/xpath
+headers:
+    [
+    "-H 'Upgrade-Insecure-Requests: 1'", 
+    "-H 'Referer: https://www.smartusa.com/dealer-inventory/search-vehicles/36200/year/all'", 
+    "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+    "--compressed"
+  ]

@@ -1,0 +1,51 @@
+target_page: https://www.choosenissan.com/pages/ax_check_set_zip/?regionalZipCode=###zipcode###&site=https://www.choosenissan.com/nissan-offers/
+nissan_offers: https://www.choosenissan.com/nissan-offers/
+lease_url: https://www.choosenissan.com/pages/ax_offer_details_modal/
+xpaths:
+  title1: //
+  title2: //sample/xpath
+  title3: //sample/xpath
+  title4: //sample/xpath
+  offer1: //sample/xpath
+  offer2: //sample/xpath
+  offer3: //sample/xpath
+  offer4: //sample/xpath
+  disclaimer: //sample/xpath
+
+nissan_headers:
+    [
+     "-H 'accept-encoding: gzip, deflate, sdch, br'",
+    "-H 'accept-language: en-GB,en-US;q=0.8,en;q=0.6'",
+    "-H 'upgrade-insecure-requests: 1'",
+    "-H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'",
+    "-H 'referer: https://www.choosenissan.com/'",
+    "-H 'authority: www.choosenissan.com'",
+    "--compressed"
+  ]
+  
+nissan_lease_headers:
+    [
+    "-H 'origin: https://www.choosenissan.com'",
+    "-H 'accept-encoding: gzip, deflate, br'",
+    "-H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8'",
+    "-H 'content-type: application/x-www-form-urlencoded; charset=UTF-8'", 
+    "-H 'accept: text/html, */*; q=0.01'", 
+    "-H 'referer: https://www.choosenissan.com/'",
+    "-H 'authority: www.choosenissan.com'", 
+    "-H 'x-requested-with: XMLHttpRequest'",
+    "--data 'offer_type=#vsp#&offer_order=#type#&offer_url=#url#&offer_year=#year#&offer_section=#section#&pfa_position=#position#' --compressed"
+    ]
+  
+nissan_post_headers:
+    [
+    "-H 'origin: https://www.choosenissan.com'",
+    "-H 'accept-encoding: gzip, deflate, br'",
+    "-H 'x-requested-with: XMLHttpRequest'",
+    "-H 'accept-language: en-GB,en-US;q=0.8,en;q=0.6'",
+    "-H 'content-type: application/x-www-form-urlencoded; charset=UTF-8'", 
+    "-H 'accept: text/html, */*; q=0.01'",
+    "-H 'cache-control: max-age=0'",
+    "-H 'authority: www.choosenissan.com'",
+    "-H 'referer: https://www.choosenissan.com/'",
+    "--compressed"
+    ]

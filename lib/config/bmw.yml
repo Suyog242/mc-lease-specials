@@ -1,0 +1,19 @@
+target_page: https://www.bmwusa.com/bin/services/offers?zipCode=
+xpaths:
+  title1: //
+  title2: //sample/xpath
+  title3: //sample/xpath
+  title4: //sample/xpath
+  offer1: //sample/xpath
+  offer2: //sample/xpath
+  offer3: //sample/xpath
+  offer4: //sample/xpath
+  disclaimer: //sample/xpath
+  LEASE: Lease
+  FINANCE: Finance
+headers:
+    [
+    "-H 'Upgrade-Insecure-Requests: 1'", 
+    "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'",  
+    "--compressed"
+  ]

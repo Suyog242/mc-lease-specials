@@ -1,0 +1,32 @@
+target_page: https://www.hyundaiusa.com/financial-tools/special-offers.aspx
+
+xpaths:
+  p_xpath: //div[@class='promo_content']
+  title: .//p[@class='vehicle_price']
+  offer: .//ul[@class='promo_features']/li
+  desclaimer: .//p[contains(text(),'Lease Offer')]/following-sibling::p[1]
+  finance: .//p[contains(text(),'Low APR')]/following-sibling::p[1]
+  cash: .//p[contains(text(),'Retail Bonus Cash')]/following-sibling::p[1]
+     
+
+target_headers: [
+        "-H 'Accept-Encoding: gzip, deflate, br'", 
+        "-H 'Accept-Language: en-US,en;q=0.9'", 
+        "-H 'Upgrade-Insecure-Requests: 1'", 
+        "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+        "-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'", 
+        "-H 'Connection: keep-alive' --compressed"
+        ]
+        
+post_headers: [
+        "-H 'Origin: https://www.hyundaiusa.com'", 
+        "-H 'Accept-Encoding: gzip, deflate, br'", 
+        "-H 'Accept-Language: en-US,en;q=0.9'", 
+        "-H 'Upgrade-Insecure-Requests: 1'", 
+        "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+        "-H 'Content-Type: application/x-www-form-urlencoded'", 
+        "-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'", 
+        "-H 'Cache-Control: max-age=0'", 
+        "-H 'Referer: https://www.hyundaiusa.com/financial-tools/special-offers.aspx'", 
+        "-H 'Connection: keep-alive' --data '###POST_DATA###' --compressed"
+]

@@ -1,0 +1,24 @@
+target_page: https://www.infinitiusa.com/offers
+offer_url: https://us.nissan-api.net/v2/offers?category=New+Offers&location=###ZIPCODE###&modelName=&type=###TYPE###&start=###START###&size=###SIZE###&includeResults=true&includeFilteredFacets=true&includePreFilteredFacets=false
+  
+test_headers: [
+        "-H 'Accept-Encoding: gzip, deflate, br'", 
+        "-H 'Accept-Language: en-US,en;q=0.9'", 
+        "-H 'Upgrade-Insecure-Requests: 1'" ,
+        "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+        "-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'", 
+        "-H 'Cache-Control: max-age=0' ", 
+        "-H 'Connection: keep-alive' --compressed"
+        ]
+
+api_headers: [
+        "-H 'Origin: https://www.infinitiusa.com'", 
+        "-H 'Accept-Encoding: gzip, deflate, br'", 
+        "-H 'Accept-Language: en-US,en;q=0.9'", 
+        "-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'", 
+        "-H 'clientKey: ###CLIENT_KEY###'", 
+        "-H 'Accept: */*'", 
+        "-H 'Referer: https://www.infinitiusa.com/offers.html'", 
+        "-H 'apiKey: ###API_KEY###'", 
+        "-H 'Connection: keep-alive' --compressed"
+        ]
